@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/addNewTask"
+        android:icon="@drawable/ic_add"
+        android:title="@string/tambahTugas"/>
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/ic_history"
+        android:title="@string/histori"/>
+    <item
+        android:id="@+id/navExit"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/exit"/>
+</menu>

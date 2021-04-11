@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home">
+
+    <!--        android:name="id.java.janganlupatugas.ListFragment"-->
+    <!--        android:name="id.java.janganlupatugas.HistoriFragment"-->
+    <!--    android:name="id.java.janganlupatugas.DetailListFragment"-->
+
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.youtaskk.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" />
+    <fragment
+        android:id="@+id/history"
+        android:name="com.example.youtaskk.HistoriFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/addNewTask"
+        android:name="com.example.youtaskk.AddNewTask"
+        android:label="fragment_add_new_task"
+        tools:layout="@layout/fragment_add_new_task" />
+</navigation>
