@@ -6,78 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            app:layout_constraintTop_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="40dp"
             android:text="Nama Tugas :"
-            android:textStyle="bold"
-            android:id="@+id/nama_tugas"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/nama_tugas"
-            android:text="Deadline :"
-            android:textStyle="bold"
-            android:id="@+id/dealine_tugas"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/dealine_tugas"
-            android:text="Catatan :"
-            android:textStyle="bold"
-            android:id="@+id/catatan"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            app:layout_constraintStart_toEndOf="@id/nama_tugas"
-            app:layout_constraintTop_toBottomOf="parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="40dp"
-            android:text="Tugas 1"
-            android:id="@+id/myTextTugas"
-            />
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/nama_tugas"/>
 
         <TextView
-            android:id="@+id/myTextDeadline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Deadline        :"
             android:textColor="@color/black"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="10dp"
-            android:text="deadline"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/dealine_tugas"
-            app:layout_constraintTop_toBottomOf="@id/myTextTugas" />
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/deadline"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Deskripsi       :"
             android:textColor="@color/black"
-            app:layout_constraintStart_toEndOf="@id/catatan"
-            app:layout_constraintTop_toBottomOf="@id/myTextDeadline"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:text="ini catatan"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:id="@+id/deskripsi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/myTextTugas"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            android:id="@+id/myTextDeadline"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/black"
             android:id="@+id/myTextCatatan"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 </FrameLayout>

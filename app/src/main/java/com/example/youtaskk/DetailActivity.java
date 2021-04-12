@@ -28,13 +28,10 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void getData(){
-        if(getIntent().hasExtra("list_tugas") && getIntent().hasExtra("deskripsi") && getIntent().hasExtra("tanggal")){
-            data1 = getIntent().getStringExtra("list_tugas");
-            data2 = getIntent().getStringExtra("deskripsi");
-            data3 = getIntent().getStringExtra("tanggal");
-            Log.d("test1", data1);
-            Log.d("test2", data2);
-            Log.d("test3", data3);
+        if(getIntent().hasExtra("data1") && getIntent().hasExtra("data2") && getIntent().hasExtra("data3")){
+            data1 = getIntent().getStringExtra("data1");
+            data2 = getIntent().getStringExtra("data2");
+            data3 = getIntent().getStringExtra("data3");
         }else {
             Toast.makeText(this,"Nothing",Toast.LENGTH_SHORT).show();
         }

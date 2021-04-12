@@ -14,7 +14,7 @@ public class ListFragment extends Fragment {
 
     String[] s1;
     String[] s2;
-//    String[] s3;
+    String[] s3;
     RecyclerView recyclerview;
 
     public ListFragment() {
@@ -26,10 +26,10 @@ public class ListFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         s1 = getResources().getStringArray(R.array.list_tugas);
-//        s2 = getResources().getStringArray(R.array.deskripsi);
         s2 = getResources().getStringArray(R.array.tanggal);
+        s3 = getResources().getStringArray(R.array.deskripsi);
         View view = inflater.inflate(R.layout.fragment_list, container, false);
-        tugasAdapter myAdapter = new tugasAdapter(getContext(), s1,s2);
+        tugasAdapter myAdapter = new tugasAdapter(getContext(), s1,s2, s3);
         recyclerview = view.findViewById(R.id.recyclerView);
         recyclerview.setAdapter(myAdapter);
         recyclerview.setLayoutManager(new LinearLayoutManager(getContext()));

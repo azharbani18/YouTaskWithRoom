@@ -15,7 +15,7 @@ public class HistoriFragment extends Fragment {
 
     String[] s1;
     String[] s2;
-//    String[] s3;
+    String[] s3;
     RecyclerView recyclerview;
 
     public HistoriFragment() {
@@ -26,10 +26,10 @@ public class HistoriFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         s1 = getResources().getStringArray(R.array.list_tugas_selesai);
-//        s2 = getResources().getStringArray(R.array.deskripsi_selesai);
+        s3 = getResources().getStringArray(R.array.deskripsi_selesai);
         s2 = getResources().getStringArray(R.array.tanggal_selesai);
         View view = inflater.inflate(R.layout.fragment_history, container, false);
-        tugasAdapter myAdapter = new tugasAdapter(getContext(), s1,s2);
+        tugasAdapter myAdapter = new tugasAdapter(getContext(), s1,s2, s3);
         recyclerview = view.findViewById(R.id.recyclerViewHistory);
         recyclerview.setAdapter(myAdapter);
         recyclerview.setLayoutManager(new LinearLayoutManager(getContext()));

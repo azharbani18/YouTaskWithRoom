@@ -15,13 +15,13 @@ public class tugasAdapter extends RecyclerView.Adapter<tugasAdapter.MyViewHolder
 
     String[] data1;
     String[] data2;
-//    String[] data3;
+    String[] data3;
     Context context;
-    public tugasAdapter(Context ct, String[] s1,String[] s2){
+    public tugasAdapter(Context ct, String[] s1,String[] s2, String[] s3){
         context = ct;
         data1 = s1;
         data2 = s2;
-//        data3 = s3;
+        data3 = s3;
     }
 
     @NonNull
@@ -42,7 +42,7 @@ public class tugasAdapter extends RecyclerView.Adapter<tugasAdapter.MyViewHolder
                 Intent intent = new Intent(context,DetailActivity.class);
                 intent.putExtra("data1",data1[position]);
                 intent.putExtra("data2",data2[position]);
-//                intent.putExtra("data3",data3[position]);
+                intent.putExtra("data3",data3[position]);
                 context.startActivity(intent);
             }
         });
