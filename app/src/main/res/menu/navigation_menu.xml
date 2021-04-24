@@ -4,10 +4,10 @@
         android:id="@+id/home"
         android:icon="@drawable/ic_home"
         android:title="@string/home"/>
-    <item
-        android:id="@+id/addNewTask"
-        android:icon="@drawable/ic_add"
-        android:title="@string/tambahTugas"/>
+<!--    <item-->
+<!--        android:id="@+id/addNewTask"-->
+<!--        android:icon="@drawable/ic_add"-->
+<!--        android:title="@string/tambahTugas"/>-->
     <item
         android:id="@+id/history"
         android:icon="@drawable/ic_history"

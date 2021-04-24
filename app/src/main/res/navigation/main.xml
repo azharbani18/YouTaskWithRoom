@@ -24,5 +24,5 @@
         android:id="@+id/addNewTask"
         android:name="com.example.youtaskk.AddNewTask"
         android:label="fragment_add_new_task"
-        tools:layout="@layout/fragment_add_new_task" />
+        tools:layout="@layout/activity_add_new_task" />
 </navigation>

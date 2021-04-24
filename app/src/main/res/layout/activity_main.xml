@@ -52,7 +52,8 @@
             app:defaultNavHost="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/LayoutToolBar"
-            app:navGraph="@navigation/main" />
+            app:navGraph="@navigation/main">
+        </fragment>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

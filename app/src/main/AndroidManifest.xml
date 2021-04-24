@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YouTaskk">
         <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".AddNewTask"></activity>
         <activity android:name=".LoadingScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

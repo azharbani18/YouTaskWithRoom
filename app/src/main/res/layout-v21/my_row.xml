@@ -35,5 +35,13 @@
             android:layout_marginStart="240dp"
             android:text="@string/date" />
 
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="240dp"
+             />
+
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

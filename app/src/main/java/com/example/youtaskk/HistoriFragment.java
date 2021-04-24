@@ -29,9 +29,9 @@ public class HistoriFragment extends Fragment {
         s3 = getResources().getStringArray(R.array.deskripsi_selesai);
         s2 = getResources().getStringArray(R.array.tanggal_selesai);
         View view = inflater.inflate(R.layout.fragment_history, container, false);
-        tugasAdapter myAdapter = new tugasAdapter(getContext(), s1,s2, s3);
+        //tugasAdapter myAdapter = new tugasAdapter(getContext(), s1,s2, s3);
         recyclerview = view.findViewById(R.id.recyclerViewHistory);
-        recyclerview.setAdapter(myAdapter);
+        //recyclerview.setAdapter(myAdapter);
         recyclerview.setLayoutManager(new LinearLayoutManager(getContext()));
         return view;
     }
